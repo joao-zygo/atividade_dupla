@@ -32,12 +32,11 @@ if (isset($_POST['create'])) {
     numero das salas: <input type="text" name="numero_sala" required><br><br>
     Quantidade de aulas: <input type="number" name="quantidade_aulas" required><br><br>
     turma: <input type="text" name="turma" required><br><br>
-<<<<<<< HEAD
-    <input type="submit" name="create" value="Adicionar Aulas">
-=======
     conteudo da aula: <input type="text" name="conteudo_aula" required><br><br>
     <input type="submit" name="create" value="adicionar aula">
->>>>>>> a29a652cd4ce516dcb53ee3a3aca64ef1a8e28e8
+
+    
+
 </form>
 
 <h2>Aulas</h2>
@@ -58,9 +57,7 @@ if (isset($_POST['create'])) {
         <td><?php echo $row['qauntidade_aulas']; ?></td>
         <td><?php echo $row['turma']; ?></td>
         <td><?php echo $row['conteudo_aula']; ?></td>
-        
-            
-        </td>
+    
     </tr>
     <?php } ?>
 </table>
