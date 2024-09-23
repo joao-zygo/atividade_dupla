@@ -39,28 +39,6 @@ if (isset($_POST['create'])) {
 
 </form>
 
-<h2>Aulas</h2>
-<table border="1">
-    <tr>
-        <th>horario da aula</th>
-        <th>Numero da sala</th>
-        <th>quantidade de aulas</th>
-        <th>turma</th>
-        <th>conteudo da aula</th>
-       
-    </tr>
-
-    <?php while($row = $result->fetch_assoc()) { ?>
-    <tr>
-        <td><?php echo $row['horadio_aulas']; ?></td>
-        <td><?php echo $row['numero_sala']; ?></td>
-        <td><?php echo $row['qauntidade_aulas']; ?></td>
-        <td><?php echo $row['turma']; ?></td>
-        <td><?php echo $row['conteudo_aula']; ?></td>
-    
-    </tr>
-    <?php } ?>
-</table>
 
 
 
