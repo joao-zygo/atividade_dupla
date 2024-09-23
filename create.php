@@ -10,7 +10,7 @@ if (isset($_POST['create'])) {
     '$numero_sala', '$quantidade', '$turma')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "nova informação";
+        echo "nova aula";
     } else {
         echo "Erro: " . $sql . "<br>" . $conn->error;
     }
@@ -31,7 +31,7 @@ if (isset($_POST['create'])) {
     numero das salas: <input type="text" name="numero_sala" required><br><br>
     Quantidade de aulas: <input type="number" name="quantidade_aulas" required><br><br>
     turma: <input type="text" name="turma" required><br><br>
-    <input type="submit" name="create" value="adicionar informação">
+    <input type="submit" name="create" value="adicionar aula">
 </form>
 
 
