@@ -1,16 +1,18 @@
 <?php
+include "connection.php";
 
 if (isset($_POST['create'])) {
     $horario_aulas = $_POST['horario_aulas'];
     $numero_sala = $_POST['numero_sala'];
     $quantidade_aulas = $_POST['quantidade_aulas'];
     $turma= $_POST['turma'];
+    $conteudo_aula = $_POST['conteudo_aula'];
 
-    $sql = "INSERT INTO pedidos (horario_aulas, numero_sala, quantidade, turma) VALUES ('$horario_aulas', 
-    '$numero_sala', '$quantidade', '$turma')";
+    $sql = "INSERT INTO aulas (horario_aulas, numero_sala, quantidade, turma, conteudo_aula) VALUES ('$horario_aulas', 
+''$numero_sala', '$quantidade_aulas', '$turma','$conteudo_aula')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "nova aula";
+        echo "Aulas";
     } else {
         echo "Erro: " . $sql . "<br>" . $conn->error;
     }
@@ -31,8 +33,35 @@ if (isset($_POST['create'])) {
     numero das salas: <input type="text" name="numero_sala" required><br><br>
     Quantidade de aulas: <input type="number" name="quantidade_aulas" required><br><br>
     turma: <input type="text" name="turma" required><br><br>
+    conteudo da aula: <input type="text" name="conteudo_aula" required><br><br>
     <input type="submit" name="create" value="adicionar aula">
 </form>
+
+<h2>Aulas</h2>
+<table border="1">
+    <tr>
+        <th>horario da aula</th>
+        <th>Numero da sala</th>
+        <th>quantidade de aulas</th>
+        <th>turma</th>
+        <th>conteudo da aula</th>
+       
+    </tr>
+
+    <?php while($row = $result->fetch_assoc()) { ?>
+    <tr>
+        <td><?php echo $row['horadio_aulas']; ?></td>
+        <td><?php echo $row['numero_sala']; ?></td>
+        <td><?php echo $row['qauntidade_aulas']; ?></td>
+        <td><?php echo $row['turma']; ?></td>
+        <td><?php echo $row['conteudo_aula']; ?></td>
+        <td>
+            
+        </td>
+    </tr>
+    <?php } ?>
+</table>
+
 
 
 </body>
