@@ -55,7 +55,7 @@ if (isset($_POST['create'])) {
         <td><?php echo $row['qauntidade_aulas']; ?></td>
         <td><?php echo $row['turma']; ?></td>
         <td><?php echo $row['conteudo_aula']; ?></td>
-        <td>
+        
             
         </td>
     </tr>
