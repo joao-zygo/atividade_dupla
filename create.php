@@ -1,15 +1,14 @@
 <?php
-include "connection.php";
-
+include "./connection.php";
 if (isset($_POST['create'])) {
-    $horario_aulas = $_POST['horario_aulas'];
+    $horario = $_POST['horario'];
     $numero_sala = $_POST['numero_sala'];
     $quantidade_aulas = $_POST['quantidade_aulas'];
     $turma= $_POST['turma'];
     $conteudo_aula = $_POST['conteudo_aula'];
 
-    $sql = "INSERT INTO aulas (horario_aulas, numero_sala, quantidade, turma, conteudo_aula) VALUES ('$horario_aulas', 
-''$numero_sala', '$quantidade_aulas', '$turma','$conteudo_aula')";
+    $sql = "INSERT INTO aulas(horario, numero_sala, quantidade_aulas, turma) VALUES ('$horario', 
+    '$numero_sala', '$quantidade_aulas', '$turma')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Aulas";
@@ -29,12 +28,16 @@ if (isset($_POST['create'])) {
 
 <h2>aulas</h2>
 <form method="POST" action="">
-    horario das aulas: <input type="datetime" name="horario_aulas" required><br><br>
+    horario das aulas: <input type="time" name="horario" required><br><br>
     numero das salas: <input type="text" name="numero_sala" required><br><br>
     Quantidade de aulas: <input type="number" name="quantidade_aulas" required><br><br>
     turma: <input type="text" name="turma" required><br><br>
+<<<<<<< HEAD
+    <input type="submit" name="create" value="Adicionar Aulas">
+=======
     conteudo da aula: <input type="text" name="conteudo_aula" required><br><br>
     <input type="submit" name="create" value="adicionar aula">
+>>>>>>> a29a652cd4ce516dcb53ee3a3aca64ef1a8e28e8
 </form>
 
 <h2>Aulas</h2>
