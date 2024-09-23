@@ -21,16 +21,16 @@ if (isset($_POST['create'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CRUD - Sistema de Pedidos</title>
+    <title>CRUD - aulas</title>
 </head>
 <body>
 
-<h2>Adicionar Pedido</h2>
+<h2>aulas</h2>
 <form method="POST" action="">
-    horario das aulas: <input type="text" name="horario_aulas" required><br><br>
+    horario das aulas: <input type="datetime" name="horario_aulas" required><br><br>
     numero das salas: <input type="text" name="numero_sala" required><br><br>
     Quantidade de aulas: <input type="number" name="quantidade_aulas" required><br><br>
-    turma: <input type="date" name="turma" required><br><br>
+    turma: <input type="text" name="turma" required><br><br>
     <input type="submit" name="create" value="Adicionar Pedido">
 </form>
 
