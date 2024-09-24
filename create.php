@@ -8,8 +8,7 @@ if (isset($_POST['create'])) {
     $conteudo_aula = $_POST['conteudo_aula'];
     $materia = $_POST['materia'];
 
-    $sql = "INSERT INTO aulas(horario, numero_sala, quantidade_aulas, turma, conteudo_aula, materia) VALUES ('$horario', 
-    '$numero_sala', '$quantidade_aulas', '$turma', '$conteudo_aula', '$materia')";
+    $sql = "INSERT INTO aulas(horario, numero_sala, quantidade_aulas, turma, conteudo_aula, materia) VALUES ('$horario', '$numero_sala', '$quantidade_aulas', '$turma', '$conteudo_aula', '$materia')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Adicionado com sucesso";

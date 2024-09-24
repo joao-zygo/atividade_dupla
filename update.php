@@ -1,4 +1,6 @@
 <?php 
+include "./connection.php";
+
 $id = $_GET['id'];
 if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['Atualizar'])){
         
