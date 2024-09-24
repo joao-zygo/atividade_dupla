@@ -20,9 +20,11 @@
     <?php foreach ($aulas as $aula): ?>
     <div>
         <p>Horario: <?= $aula["horario"]?> </p>
-        <p>Numero da Sala: <?= $aula["numero"]?> </p>
-        <p>Quantidade de Aulas: <?= $aula["quantidade"]?> </p>
+        <p>Numero da Sala: <?= $aula["numero_sala"]?> </p>
+        <p>Quantidade de Aulas: <?= $aula["quantidade_aulas"]?> </p>
         <p>Turma: <?= $aula["turma"]?> </p>
+        <p>Conteudo da aula:: <?= $aula["conteudo_aula"]?> </p>
+        <p>Matéria: <?= $aula["materia"]?> </p>
         <a href="update.php?id=<?= $aula["id"]?>">Alterar</a>
         <a href="delete.php?id=<?= $aula["id"]?>">Deletar</a>
     </div>
