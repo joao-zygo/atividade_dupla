@@ -12,7 +12,7 @@ if (isset($_POST['create'])) {
     '$numero_sala', '$quantidade_aulas', '$turma', '$conteudo_aula', '$materia')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Aulas";
+        echo "Adicionado com sucesso";
     } else {
         echo "Erro: " . $sql . "<br>" . $conn->error;
     }
