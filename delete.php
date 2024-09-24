@@ -7,5 +7,5 @@ if (isset($_GET['id'])) {
     $conn->query("DELETE FROM aulas WHERE id = '$id'");
 }
 
-$sql->close();
+$conn->close();
 header("location: read.php");
