@@ -7,7 +7,7 @@
         array_push($aulas, $row);
     }
 
-    $conn->close();
+    $sql->close();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
