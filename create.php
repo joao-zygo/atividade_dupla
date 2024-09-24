@@ -4,7 +4,7 @@ if (isset($_POST['create'])) {
     $horario = $_POST['horario'];
     $numero_sala = $_POST['numero_sala'];
     $quantidade_aulas = $_POST['quantidade_aulas'];
-    $turma= $_POST['turma'];
+    $turma = $_POST['turma'];
     $conteudo_aula = $_POST['conteudo_aula'];
     $materia_aula = $_POST['mteria_aula'];
 
