@@ -41,4 +41,4 @@ if (isset($_POST['create'])) {
 </body>
 </html>
 
-<?php $sql->close() ?>
+<?php $conn->close() ?>
