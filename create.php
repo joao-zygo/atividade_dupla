@@ -33,6 +33,7 @@ if (isset($_POST['create'])) {
     Quantidade de aulas: <input type="number" name="quantidade_aulas" required><br><br>
     turma: <input type="text" name="turma" required><br><br>
     conteudo da aula: <input type="text" name="conteudo_aula" required><br><br>
+    materia da aula: <input type="text" name="materia_aula" required><br><br>
     <input type="submit" name="create" value="adicionar aula">
 
     
