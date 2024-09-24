@@ -23,6 +23,8 @@
         <p>Numero da Sala: <?= $aula["numero"]?> </p>
         <p>Quantidade de Aulas: <?= $aula["quantidade"]?> </p>
         <p>Turma: <?= $aula["turma"]?> </p>
+        <p>conteudo da aula: <?= $aula["conteudo_aula"]?> </p>
+        <p>materia: <?= $aula["materia_aula"]?> </p>
         <a href="update.php?id=<?= $aula["id"]?>">Alterar</a>
         <a href="delete.php?id=<?= $aula["id"]?>">Deletar</a>
     </div>
