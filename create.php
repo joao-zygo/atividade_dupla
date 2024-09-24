@@ -6,9 +6,10 @@ if (isset($_POST['create'])) {
     $quantidade_aulas = $_POST['quantidade_aulas'];
     $turma= $_POST['turma'];
     $conteudo_aula = $_POST['conteudo_aula'];
+    $materia_aula = $_POST['mteria_aula'];
 
-    $sql = "INSERT INTO aulas(horario, numero_sala, quantidade_aulas, turma) VALUES ('$horario', 
-    '$numero_sala', '$quantidade_aulas', '$turma')";
+    $sql = "INSERT INTO aulas(horario, numero_sala, quantidade_aulas, turma, materia_aula) VALUES ('$horario', 
+    '$numero_sala', '$quantidade_aulas', '$turma','$materia_aula')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Aulas";
