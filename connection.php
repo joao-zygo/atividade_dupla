@@ -4,8 +4,8 @@ $username = "root";
 $password = "root";
 $dbname = "aulas";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$sql = new mysqli($servername, $username, $password, $dbname);
 
-if ($conn->connect_error) {
-    die("Falha na conexão: " . $conn->connect_error);
+if ($sql->connect_error) {
+    die("Falha na conexão: " . $sql->connect_error);
 }

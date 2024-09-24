@@ -1,13 +1,13 @@
 <?php
     include "./connection.php";
-    $response = $conn->query("SELECT * FROM aulas");
+    $response = $sql->query("SELECT * FROM aulas");
     $aulas = array();
 
     while($row = $response->fetch_assoc()) {
         array_push($aulas, $row);
     }
 
-    $conn->close();
+    $sql->close();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
